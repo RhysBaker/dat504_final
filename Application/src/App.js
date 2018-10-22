@@ -30,7 +30,7 @@ class App extends Component {
                 </div>
                 <div className="indexBoxChild2">
                   <div className="pageMessage">Sign in:</div>
-                  <form action="./addclothes.html" className="signupForm">
+                  <form action="./home.html" className="signupForm">
                     <div className="indexFormBox">
                       <p className="indexFormBoxTitle">USERNAME: </p>
                       <input type="text" name="username" className="indexFormBoxCont"/>
@@ -58,6 +58,14 @@ class App extends Component {
     else if (urlVal === "/addclothes.html") {
     return (
       <AddNewItemPage></AddNewItemPage>
+    );
+    }
+    else if (urlVal === "/locationerror.html") {
+    return (
+      <div>
+      <h1 className="pageMessage">Please enter an existing location.</h1>
+      <a href="index.html"  className="pageMessage"><p>try again</p></a>
+      </div>
     );
     }
   }
